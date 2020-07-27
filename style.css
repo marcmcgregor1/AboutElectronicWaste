@@ -25,7 +25,8 @@ html.is-animating .transition-fade {
   width: 100%;
   background-color: transparent;
   height: 5rem;
-  border: 0;
+  border: 0; 
+	z-index: 63;
   
   
   
