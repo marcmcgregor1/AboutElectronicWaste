@@ -1,0 +1,672 @@
+@font-face {
+    font-family: Fivosansmodern Medium;
+    src: url(fivosansmodern-medium.otf);
+}
+@font-face {
+
+    font-family: Fivosansmodern Bold;
+    src: url(fivosansmodern-bold.otf);
+}
+
+
+.transition-fade {
+  transition: 0.4s;
+  opacity: 1;
+}
+
+html.is-animating .transition-fade {
+  opacity: 0;
+}
+
+.progress-bar-top {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: transparent;
+  height: 5rem;
+  border: 0;
+  
+  
+  
+}
+
+.bar-top{
+  
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 5px;
+  width: 0;
+  background-color: #5510ff;
+  
+
+
+  
+}
+
+
+
+
+#hamburger{
+  transition: ease all 0.5s;
+  
+  
+}
+#hamburger:hover{
+  transform: scale(1.2);
+  
+}
+
+body {
+font-family: Fivosansmodern Medium;
+line-height: 1.7;
+color: #4E5EA4;
+background-color: #FCD8D8;
+cursor: crosshair;
+}
+
+
+
+h1{
+ font-family: 'Bangers', cursive;
+  font-size: 36px;
+ 
+  
+}
+
+h2{
+  
+   font-family: 'Bangers', cursive;
+  font-size: 24px;
+  letter-spacing: 1px;
+
+}
+
+h3{
+     font-family: 'Bangers', cursive;
+    font-size:18px;
+  letter-spacing: 2px;
+  
+  
+}
+
+p{
+  
+  line-height: 1.7;
+  
+  
+}
+header{
+  
+  height: 15vh;
+  background-color: #4D5CA6;
+  border-bottom: 7px solid #414C85;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 120px;
+}
+
+#titleh1{
+  color: #ffffff;
+  transition: ease all 0.5s;
+  
+}
+
+#titleh1:hover{
+  
+ transform: scale(1.2);
+}
+
+
+.menu{
+ 
+  background-color: #7E8DDB;
+  width: 400px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  transform: translateX(-100%);
+    z-index: 20;
+  transition:  ease all 0.5s;
+
+}
+
+
+.open{
+  
+  transform: translateX(0);
+  
+  
+}
+
+
+nav{
+  position: absolute;
+  left: 65px;
+  top: 50%;
+transform: translateY(-50%);
+  
+  
+  
+  
+  
+  
+}
+
+
+
+nav a{
+  
+  font-size: 32px;
+  font-weight: 700;
+     font-family: 'Bangers', cursive;
+  letter-spacing: 5px;
+  display: block;
+  margin-bottom: 20px ;
+  transition: ease all 0.5s;
+  text-decoration: none;
+  color: #F9D5D5;
+  
+}
+
+nav a:hover{
+  
+  transform: rotate(-5deg) scale(1.2);
+    color: #F9D5D5;
+  text-decoration: none;
+
+  
+}
+
+
+
+.menu-toggle{
+  
+  top: 30px;
+  left: 30px;
+  z-index: 21;
+  position: absolute;
+  
+  
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+main{
+  
+  display: grid;
+ grid-template-columns: repeat(12, 1fr);
+ gap: 32px 32px;
+  grid-auto-flow: dense;
+  margin: 0 35px;
+  z-index: 10;
+    position: absolute;
+
+}
+
+
+
+.intro{
+    grid-column: 1 / span 5;
+  padding-bottom: 70px;
+
+  
+}
+#intro-header{
+  
+  padding-bottom: 70px;
+
+}
+
+
+
+#what-ewaste-header{
+  grid-column: 3 / span 5;
+  padding-bottom: 38px;
+  text-align: right;
+  margin-top: 200px;
+
+}
+
+#what-ewaste-paragraph{
+  grid-column: 3/span 8;
+  padding-bottom: 90px;
+
+}
+
+#impact{
+  
+  grid-column: 7/span 5;
+
+}
+
+#impact-header{
+  padding-bottom: 40px;
+
+}
+
+.card-5 {
+  box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+   background: #EDF0FF;
+  border-radius: 2px;
+  display: inline-block;
+  height: 300px;
+  margin: 1rem;
+  position: relative;
+  width: 350px;
+  grid-column: 8/ span 5;
+    transition: ease all 0.5s;
+
+}
+
+.card-5:hover{
+  
+  transform: rotate(5deg);
+  background-color: #ffffff;
+}
+
+.card-5 h2{
+margin: 35px 5px 10px 35px;
+}
+
+.card-6 {
+  box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+   background: #EDF0FF;
+  border-radius: 2px;
+  display: inline-block;
+  height: 300px;
+  margin: 1rem;
+  position: relative;
+  width: 350px;
+  grid-column: 1/ span 3;
+  transition: ease all 0.5s;
+
+}
+
+.card-6:hover{
+  
+    transform: rotate(-5deg);
+  background-color: #ffffff;
+
+}
+
+.card-6 h2{
+  margin: 0 15px;
+}
+
+#tv{
+ position: absolute;
+top: 8px;
+right: 19px;
+width: 75px; 
+  
+}
+
+
+.statistics{
+  margin-top: 150px;
+  grid-column: 2/span7;
+  width: 70%;
+  margin-bottom: 50vh;
+  
+}
+
+
+
+
+.recycle{
+  
+  grid-column: 1/span 5;
+}
+
+#recycle-header{
+  padding-bottom: 50px;
+
+}
+
+.card-7 {
+  box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+   background: #EDF0FF;
+  border-radius: 2px;
+  display: inline-block;
+  height: 300px;
+  margin: 1rem;
+  position: relative;
+  width: 350px;
+  grid-column: 7/span 5;
+  transition: ease all 0.5s;
+
+}
+
+.card-7:hover{
+  transform: scale(1.12);
+}
+
+
+
+
+.help{
+  
+ grid-column: 6/span 6;
+  margin-top: 200px;
+  
+  
+}
+
+#help-header{
+  
+  margin-bottom:25px ;
+}
+
+
+#fact-btn{
+  
+  width: 120px;
+  height: 56px;
+  background-color: #162A71;
+  color: #FCD8D8;
+	text-align: center;
+  border-radius:  5px 5px 5px 5px;
+  margin: 20px 0 35px 45px;
+
+  
+}
+#fact-btn h3{
+  padding: 10px 5px;
+}
+
+
+
+#renewable {
+  right: 0;
+  top: 0%;
+  position: absolute;
+  width: 90px;
+}
+
+
+.card-7 h2{
+  font-size: 18px;
+  margin: 0 15px;
+  
+}
+
+#modular {
+position: absolute;
+top: 7px;
+right: 10px;
+width: 80px;
+
+}
+
+.card-8 {
+  box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+   background: #EDF0FF;
+  border-radius: 2px;
+  display: inline-block;
+  height: 300px;
+  margin: 1rem;
+  position: relative;
+  width: 350px;
+  grid-column: 1/ span 3;
+  transition: ease all 0.5s;
+  margin-top:35vh;
+}
+
+.card-8:hover{
+  transform: scale(.9);
+  background-color: #ffffff;
+  
+}
+
+#cpu {
+position: absolute;
+top: 0;
+right: 0;
+  width: 90px;
+}
+
+div.card:nth-child(11) > h2:nth-child(3) {
+ margin: 0 15px;
+}
+
+#stat-1{
+  text-align: center;
+  letter-spacing: 2px;
+}
+
+
+.statistic-1{
+  
+  margin-bottom: 10vh;
+}
+
+#stat-2{
+  text-align: center;
+  letter-spacing: 2px;
+}
+
+#stat-2-p{
+  
+  text-align: center;
+  color: #7788D9;
+}
+
+#statistic-2{
+  margin-bottom: 10vh;
+}
+
+#stat-3{
+  text-align: center;
+  letter-spacing: 2px;
+  
+}
+
+#stat-3-p{
+  
+  text-align: center;
+  color:#7788D9 ;
+  
+}
+.progress{
+  transition: ease all 0.5s;
+}
+.progress:hover{
+  transform: scale(1.05);
+  
+}
+
+#dots {
+ position: absolute;
+ top: 0;
+ right: 0;
+ z-index: -3;
+  opacity: 0.5;
+  height: 500vh;
+}
+
+
+.card-9 {
+  box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+   background: #EDF0FF;
+  border-radius: 2px;
+  display: inline-block;
+  height: 300px;
+  margin: 1rem;
+  position: relative;
+  width: 380px;
+  grid-column: 6/ span 3;
+  transition: ease all 0.5s;
+  margin-top:15vh;
+}
+
+.card-9:hover{
+  transform: scale(1.02);
+  background-color: #ffffff;
+  
+}
+
+#toxic {
+ position: absolute;
+ top: 20px;
+ right: 5px;
+}
+
+
+.about{
+ text-align: center;
+	margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  height: 300px;
+  background-color: #ffffff;
+  border-radius: 10px 10px 10px 10px;
+  
+}
+
+.about h3{
+  letter-spacing: 2px;
+}
+.about h2{
+  letter-spacing: 2px;
+padding: 45px 25px;  
+}
+div.card:nth-child(12) > h2:nth-child(3) {
+ /*! margin: 0px 30px; */margin-top: 65px;
+ margin-left: 30px;
+}
+
+
+
+
+
+@media only screen and (max-width: 600px) {
+  body {
+overflow-x: hidden;
+  }
+  
+  
+/* Element | http://about-e-waste.superhi.com/index.html */
+
+#swup > main:nth-child(1) {
+  display: block;
+  width: 98%;
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* Element | http://about-e-waste.superhi.com/index.html */
+
+div.card:nth-child(2) {
+width: 230px;
+  font-size: 20px;
+  height: 50vh;
+}
+
+/* Element | http://about-e-waste.superhi.com/index.html */
+
+div.card:nth-child(2) > div:nth-child(1) {
+  width: 70px;
+  margin: 9px;
+}
+  
+  
+  div.card:nth-child(2) > h2:nth-child(3) {
+margin: 10px;
+}
+
+/* Element | http://about-e-waste.superhi.com/index.html */
+
+#renewable {
+  display: none;
+}
+
+/* Element | http://about-e-waste.superhi.com/index.html */
+
+#what-ewaste-header {
+  padding: 0;
+  text-align: center;
+}
+
+/* Element | http://about-e-waste.superhi.com/index.html */
+
+div.card:nth-child(6) {
+  width: 276px;
+}
+
+/* Element | http://about-e-waste.superhi.com/index.html */
+
+div.card:nth-child(6) > div:nth-child(1) {
+  width: 90px;
+  margin: 21px;
+}
+
+/* Element | http://about-e-waste.superhi.com/index.html */
+
+#stat-1 {
+  text-align: center;
+}
+
+/* Element | http://about-e-waste.superhi.com/index.html */
+
+.statistics {
+  width: 100%;
+}
+
+/* Element | http://about-e-waste.superhi.com/index.html */
+
+div.card:nth-child(9) {
+  width: 295px;
+}
+
+/* Element | http://about-e-waste.superhi.com/index.html */
+
+div.card:nth-child(11) {
+  width: 282px;
+}
+
+/* Element | http://about-e-waste.superhi.com/index.html */
+
+div.card:nth-child(12) {
+  width: 279px;
+}
+
+/* Element | http://about-e-waste.superhi.com/index.html */
+
+div.card:nth-child(12) > div:nth-child(1) {
+  width: 107px;
+  height: 50px;
+}
+
+  .about{
+    height: 110vh;
+  }
+  #dots{
+    display: none;
+  }
+  
+}
+
+
+
+
+
+
+
+
+
+
+ 
